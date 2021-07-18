@@ -1,0 +1,1548 @@
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+GEOPHYSICS, VOL. 63, NO. 4 (JULY-AUGUST 1998); P. 1213-1224, 14 FIGS.
+
+Avoiding pitfalls in shallow seismic reflection surveys
+
+Don W. Steeples* and Richard D. Miller!
+
+ 
+
+ABSTRACT
+
+Acquiring shallow reflection data requires the use
+of high frequencies, preferably accompanied by broad
+bandwidths. Problems that sometimes arise with this
+type of seismic information include spatial aliasing of
+ground roll, erroneous interpretation of processed air-
+waves and air-coupled waves as reflected seismic waves,
+misinterpretation of refractions as reflections on stacked
+common-midpoint (CMP) sections, and emergence of
+processing artifacts. Processing and interpreting near-
+surface reflection data correctly often requires more than
+a simple scaling-down of the methods used in oil and
+gas exploration or crustal studies. For example, even un-
+der favorable conditions, separating shallow reflections
+from shallow refractions during processing may prove
+difficult, if not impossible. Artifacts emanating from in-
+adequate velocity analysis and inaccurate static correc-
+tions during processing are at least as troublesome when
+they emerge on shallow reflection sections as they are
+on sections typical of petroleum exploration. Conse-
+quently, when using shallow seismic reflection, an inter-
+preter must be exceptionally careful not to misinterpret
+as reflections those many coherent waves that may ap-
+pear to be reflections but are not. Evaluating the validity
+of a processed, shallow seismic reflection section there-
+fore requires that the interpreter have access to at least
+one field record and, ideally, to copies of one or more
+of the intermediate processing steps to corroborate the
+interpretation and to monitor for artifacts introduced by
+digital processing.
+
+ 
+
+ 
+
+ 
+
+INTRODUCTION
+
+Problems in collecting, processing, and interpreting seismic
+data can impede the practical implementation of near-surface,
+common-midpoint (CMP), seismic reflection techniques, also
+known as common depth-point (CDP) methods. However,
+
+when used correctly, these same methods can be very effec-
+tive in analyzing the geology of the near surface.
+
+Detecting shallow reflectors requires the use of high frequen-
+cies, a fact first recognized by Evison (1952). For example, when
+a synthetic 100-Hz source wavelet is introduced into a 10-m-
+thick layer over a half-space, the first arrival separates nicely
+from the reflection at geophone offsets of less than 5 m (Fig-
+ure 1). However, when a 40-Hz dominant-frequency wavelet is
+used, interference between the first arrival and the reflection
+wavelet occurs at all offsets, including zero. Consequently, we
+can obtain the desired shallow reflection result only when we
+use high frequencies, no matter what the bandwidth. Based on
+this finding and on the fact that clean Ricker wavelets do not
+occur in real data, any event occurring earlier than ~25 ms
+on a stacked section having a dominant frequency of less than
+~100 Hz cannot be considered an uncontaminated reflection.
+
+Other problems, which we collectively term “pitfalls,” in-
+volve the spatial aliasing of ground roll, interpreting airwaves
+and air-coupled waves as actual seismic waves, incorrectly in-
+terpreting refractions as reflections on stacked CMP sections,
+and failure to deal with processing artifacts. Examples of these
+pitfalls are grouped into sections dealing with the collection,
+processing, and interpretation of near-surface data, along with
+recommendations for either diagnosing and rectifying or avoid-
+ing the problems in each of these areas.
+
+Data-collection pitfalls
+
+Field testing.—Before a seismic reflection survey is under-
+taken at a new site, we recommend that on-site testing be done.
+Ideally, a fuil day of walkaway noise testing, a procedure in
+which geophones are moved progressively farther from the
+shotpoint, should be scheduled at the beginning of a project.
+We advocate testing at least two types of seismic sources (eg.,
+weight drops, explosives, projectiles, or Vibroseis™) in at least
+two sizes (e.g., 12- and 20-lb sledgehammers, 8- and 12-gauge
+downhole shotguns) or sweep strategies per source for each
+project. Generally, we have found that high-quality, 40-Hz geo-
+phones are adequate for this type of testing. However, at loca-
+tions exhibiting dominant frequencies of 400 to 600 Hz, we use
+100-Hz geophones.
+
+Manuscript received by the Editor April 25, 1997; revised manuscript received December 1, 1997.
+*Dept. of Geology, The University of Kansas, Lawrence, Kansas 66045-2124. E-mail: steeples@kuhub.cc.ukans.edu.
+tKansas Geological Survey, 1930 Constant Avenue, Lawrence, Kansas 66047-3726. E-mail: rmiller@kgs.ukans.edu.
+
+© 1998 Society of Exploration Geophysicists. All rights reserved.
+
+1213
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1214 Steeples and Miller
+
+To some degree, the relative amplitudes of reflections, as
+compared to ground roll, are a function of geophone coupling
+to the ground. In most circumstances, the best coupling is ob-
+tained when geophones mounted on long spikes are planted
+firmly in the earth. When the geophones are poorly coupled to
+the ground, ground roll is enhanced relative to reflections (see
+Hoover and O’Brien, 1980; Krohn, 1984).
+
+For the purposes of walkaway testing, we have found it ad-
+visable to begin with geophone station spacings that are about
+half those we would expect to use for a production survey at
+a given site. At this stage, we also use shot-to-geophone maxi-
+mum offsets that are at least 15 times the depth of the primary
+target. Normally, we have a general set of parameters in mind
+when we arrive at a particular site. However, the results of the
+walkaway tests often require us to alter one or more of those
+parameters as we begin the production phase of the survey.
+
+When using a seismograph with 16 or fewer bits of analog-
+to-digital (A/D) conversion, we have found it advantageous to
+have a large selection of pre-A/D filter combinations available
+so we can test at least three filter settings for each walkaway
+test. When the seismograph has 18 bits or more of A/D conver-
+sion, we advise recording shallow reflection data without using
+analog, low-cut filters to avoid phase distortion and potential
+loss of bandwidth. However, the adequacy of the instantaneous
+dynamic range of the seismograph must be the overriding con-
+sideration when determining whether pre-A/D, low-cut filters
+are to be used. The desired data are lost when seismograph
+gain is too low to record at least one or two bits of reflection
+information, a situation that may occur when too much low-
+frequency surface-wave information is allowed to reach the
+A/D converters. Alternatively, when gain is too high and the
+data are clipped, reflection data will be recorded ambiguously,
+in most cases rendering them useless.
+
+Geophone Offset (m)
+
+24 16 8
+
+. sac
+
+ 
+
+Direct
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Co Ba SSF Reflected
+— >
+50 PP
+2 7
+=
+75
+Layer thickness: Om
+Layer P-wave velocity: 800 m/s
+
+Half-space velocity: 6000 m/s
+
+Fic. 1. A layer-over-half-space model showing 100-Hz arrivals
+for the direct wave only and the primary reflection from a re-
+flector at a depth of 10 m. Note the interference that occurs at
+distances as small as 5 m from the shotpoint. When the domi-
+nant frequency of the data can be increased, the interference
+problem can be decreased.
+
+Ground rol].— Usually, ground roll is characterized by low
+frequency, low velocity, and high amplitude. Because ground
+roll tends to mask reflection signals, it has presented a dilemma,
+since the 1920s, for seismologists in pursuit of hydrocarbons.
+Classically, the methods used to deal with ground roll are source
+and geophone arrays, frequency filtering, f-k filtering, and
+stacking. Generally, however, ground roll is less troublesome
+during shallow surveys than it is during surveys undertaken
+at greater depths. Although we have performed shallow re-
+flection surveys at more than 100 sites, including areas charac-
+terized by volcanics at or near the surface and locations with
+water tables 50 m or more below the surface, we have not yet
+encountered a site at which the reflections in the upper 100 ms
+did not have a dominant frequency nearly double that of the
+ground roll. Although such sites may exist, to date we have not
+found any shallow reflections with low dominant frequencies
+relative to the dominant frequency of the ground roll. Hence,
+we have been able to decrease the amplitude of the ground roll
+either by frequency filtering or by using a combination of fre-
+quency filtering, spectral balancing, and f-k filtering. Minimiz-
+ing ground roll by applying digital filtering presupposes that the
+instantaneous dynamic range of the equipment is large enough
+to allow the reflected energy to be recorded in the presence of
+high-amplitude noise. However, even when using systems fea-
+turing quiet electronics and 16 bits or more of A/D conversion,
+reflected energy cannot always be recorded successfully. Al-
+ternatively, when the reflections can be maintained in the opti-
+mum window (Hunter et al., 1984), ground roll can be removed
+by surgical muting.
+
+When data frequency is too low for shallow reflections.—In
+shallow surveying, a lower limit of acceptable reflection fre-
+quencies exists, based on seismic velocity and target depth. Of-
+ten, this limit can be determined by using forward modeling, as
+shown in Figure 1, or by making some simple calculations. For
+example, assume you are trying to record shallow reflections
+at a time of 25 ms with a field situation that produces 40-Hz
+dominant-frequency wavelets. Assume further that the first ar-
+rival comes in at 5 ms on the nearest field-file trace, which would
+not be uncommon in a survey so near the surface. Note that,
+in this example, the trailing edge of the first-arrival wavelet
+would not disappear until after the 30-ms mark on the near-
+offset traces. This results from adding the period of a 40-Hz
+wavelet (25 ms) to the 5 ms for the first arrival. Hence, any
+energy appearing on the stacked sections with a time of less
+than 30 ms would be contaminated by first-arrival waves, Un-
+der these circumstances, we would not be able to engender
+any useful reflections earlier than 30 ms. Also, the first arrivals
+tend to be somewhat ringy, so the 40-Hz dominant-frequency
+wavelet specified in the example would interfere even after
+30 ms. Hence, a few additional milliseconds must pass before
+reflection information can be recorded without interference.
+
+To address the lower frequency limit, we have tried numer-
+ous processing techniques, including t-p and f-k filtering, to
+separate direct waves and refractions from genuine shallow
+reflections. Of these, the only method that appears to work
+consistently is to generate and record much higher frequencies
+than those commonly used in reflection surveys involving the
+deeper regions. At some locations, we have not been able to
+work at frequencies high enough to separate shallow reflections
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+Shallow Reflection Pitfalls 1215
+
+from refractions and direct waves. In such cases, the seismic re-
+flection method must be considered inappropriate in its present
+stage of development.
+
+Spatial and temporal aliasing —Aliasing occurs when data
+are not sampled often enough in time or space. For example,
+the buggy wheels that we sometimes see in Western movies fre-
+quently appear to be turning backward, even though we know
+they are moving forward. This phenomenon occurs because a
+movie camera is not designed to sample the viewing field of-
+ten enough to represent what is happening in reality. Similarly,
+when the seismic wavefield is not sampled often enough in time,
+seismograms may provide a false picture of ground motion.
+
+Modern engineering seismographs have been designed to
+circumvent temporal aliasing by means of antialias, high-cut
+filters installed at the factory. Some of these scismographs au-
+tomatically select and activate an appropriate antialiasing fil-
+ter before any data are recorded. Others require adjusting the
+seismograph manually each time the sampling rate is changed.
+The problems inherent in temporal aliasing and the solutions
+to them are generally well known to those in the fields of seis-
+mology and digital signal processing (e.g., Yilmaz, 1987), so we
+will not address them here.
+
+Spatial aliasing issues, in which data are not sampled fre-
+quently enough in space, are less familiar. One example of
+spatially aliased shallow seismic data appears in Steeples and
+Miller (1990), and another is presented in Figure 2. Despite
+
+Manson, lowa, Shot Gather
+
+source-to-receiver offset (m)
+
+wo
+
+So
+
+So
+|
+
+time (ms)
+
+600
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fic. 2. Spatially aliased ground roll from the Manson impact
+structure, Iowa. Note the coherency of the ground roll with
+apparent moveout in the opposite direction from that of the
+first arrival. Note also that the air blast is spatially aliased (data
+from Keiswetter, 1995).
+
+a geophone group interval of 5 m, the ground roll is spatially
+aliased, as shown by the apparent phase velocity of the ground
+rollin a direction opposite to that of the first arrivals. Over the
+past decade, the authors have had the opportunity to observe
+the spatial aliasing of ground roll at several sites. In theory, a
+seismologist might use spatially aliased data—conceivably con-
+structing an entire survey around them—only to wonder why
+the “reflector” disappears during processing or, worse, why
+the interpretation of the data is inconsistent with the results
+of drilling. In fact, we are aware of one incident in which a
+geophysical contractor plotted aliased, common-offset ground
+roll as though it were an interpretable reflection. To help avoid
+such pitfalls, we have developed these strategies:
+
+1) When a coherent event on a field-file seismogram is a
+true reflector, moving the shotpoint a major fraction of
+one geophone interval closer to (or farther away from)
+the geophone spread will have little effect on the appear-
+ance of the reflector. However, when the coherent event
+is the spatial aliasing of ground roll, the effect is often
+substantial. Figure 3 illustrates a case in which moving
+the shotpoint by only 1 m affected the seismogram sub-
+stantially. The events observed at 120 and 160 ms initially
+appeared to be reflections. However, when the shotpoint
+was moved, a substantial change in the seismogram re-
+sulted, thus removing the coherency of both events,
+
+2) Decreasing the geophone interval by a substantial
+amount, such as a factor of two or three, will improve
+the coherency of a true reflector but will destroy that of
+spatially aliased ground roll.
+
+3) When additional geologic or geophysical information is
+available from a site (e.g., uphole traveltime, depth to
+bedrock, acoustic or other geophysical logs), a pocket
+calculator program (Steeples and Miller, 1990) used to
+calculate a least-squares-fit hyperbola to a set of T- and
+X-points measured directly from a field-file seismogram
+may provide some assistance in assessing whether a sus-
+pected reflection is genuine.
+
+4) Energy reflected from layers near the surface should have
+a frequency content close to that of the direct wave and
+the early refracted arrivals on the field files. When the ob-
+served reflection frequencies on field files, common-offset
+sections, or CMP sections are considerably lower than
+those of the first arrivals, the recorded events are likely
+to be caused by ground roll rather than by reflections.
+
+Data processing pitfalls
+
+Air-coupled waves——Most seismic sources emit air-blast
+noise that can be heard by a bystander. When this noise couples
+to the ground or to geophones planted in the ground, the emis-
+sions are termed air-coupled waves. Collectively, such waves
+are known as airwaves. Airwaves can cause enormous prob-
+lems during the processing of shallow reflection data. Our ex-
+perience has been that when low-cut filters (either analog or
+digital) of 200 Hz or higher are used, airwaves commonly show
+a dominant frequency near that of the lower band edge of the
+low-cut filter used to refine the data. When low-cut filtering is
+minimal, the dominant frequency of the airwaves is often in the
+range of 150 Hz or higher. Simple frequency filtering does little
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1216 Steeples and Miller
+
+to attenuate airwaves within the frequency range of reflected
+energy. Therefore, we prefer to use a surgical muting window to
+remove airwaves. The recorded air blast usually exhibits some
+energy at frequencies between 200 and 500 Hz, so these waves
+are likely to be spatially aliased unless the geophone interval
+is substantially less than 1 m. Because of spatial aliasing, f-k
+filtering must be used with caution to avoid enhancing those
+components of the air-coupled waves that could stack coher-
+ently on CMP sections. In most cases air-coupled waves last
+several cycles, which causes a portion of the high-frequency
+wave to fall outside the mute window in f-k space. These parts
+of the airwave may stack coherently at velocities that are rea-
+sonable for near-surface materials. The problem becomes more
+dramatic when data are scaled or trace-balanced after filtering.
+
+Figure 4 provides an example of a CMP scismic section ex-
+hibiting what appear to be coherent reflections at 60 to 70 ms.
+These are not truc reflections but are stacked air blast. Figure 5
+is an example of an air-blast echo from the recording truck
+superimposed on an intra-alluvial reflection. Note that the po-
+sition of the diffraction-like pattern changed when the record-
+ing truck was moved.
+
+In one high-resolution seismic reflection survey of which we
+are aware, about a dozen “reflections” were observed on a
+section that had been processed by expcricnecd professionals.
+However, close inspection later revealed that all of the “re-
+flections” had a dominant period of about 9 ms, from times
+of 80 ms to 600 ms. Furthermore, these apparent reflections
+had the highest S/N ratio where the CMP fold was smallest.
+The S/N ratio of reflections on CMP-stacked sections should
+increase proportionally to the square root of the fold rather
+than decrease with increasing fold. So, when the data were re-
+processed with appropriate surgical muting of the air blast, no
+usable reflections were found. Indeed, it became evident that
+the entire geologic interpretation was based on the CMP stack-
+ing of air blast, complete with sand lenses whose presence was
+by chance supported by the drilling data.
+
+Refractions.—Separating shallow reflections from shallow
+refractions on ficld files prior to or during processing is of-
+
+ten a formidable task. We know that energy reflected near the
+surface tends to have a frequency content close to that of the
+direct wave and the early refracted arrivals on field files. As a
+result, reflections cannot be separated easily from refractions
+by means of frequency filtering. Moreover, wide-angle shallow
+reflections and shallow refractions have very similar phase ve-
+locities, and they may interfere with each other—destructively
+or constructively—over a large range of geophone offsets. Con-
+sequently, using f-k filtering to separate overlapping events
+having similar phase velocitics is ineffective because of the
+side-lobe effects of the filtcrs.
+
+Distinguishing refractions from reflections on field files can
+be difficult, but separating shallow reflections unequivocally
+from shallow refractions on processed sections without refcr-
+ring to the field files is nearly impossible. Even so, one useful
+indicator on a processed scismic section is frequency inversion
+with depth. Figure 6 is an cxample of stacked refractions that
+have an apparent frequency lower than that of the underlying
+reflections. Under normal geologic conditions, the frequency
+of the reflections on a shallow reflection seismogram will de-
+crease with depth as a result of attenuation with increasing
+travelpath length. When the apparent frequency of the coher-
+ent events changes from low at short reflection times to high at
+longer times, shallow refractions may have been stacked into
+the data. Another possibility is that high-frequency airwaves
+have stacked coherently at the longer times.
+
+In a CMP processing scheme, the configuration of a
+reflection-time display will be transformed from a hyperbola
+to a straight line during NMO correction. True shallow reflec-
+tions typically losc 20-30% of their high-frequency information
+during this process because of NMO stretch (Miller, 1992). Re-
+fractions are stretched by a similar amount. Yet refractions at
+close offsets that arrive linearly do not respond in-phase to
+a hyperbolic transformation; thus, the misalignment of indi-
+vidual wavelets present during CMP stacking may drastically
+reduce their apparent dominant frequency. To illustrate this
+point, Figure 7 presents a low-frequency refraction between 20
+and 40 ms that was allowed to remain in the data throughout
+the stacking process.
+
+source-to-receiver offset (m)
+
+time (ms)
+
+ 
+
+ 
+
+“sme SOatially aliased ground roll
+
+Fic. 3. Possible reflections observable at 120 and 170 ms in the field file on the left disappear when the sledge-
+hammer shotpoint is moved only 1 m. Geophone plants and other parameters are the same in the field file on
+the right, except that the sledgehammer source was moved 1 m farther from the line. The apparent reflections in
+the field file on the left are spatially aliased ground roll. (Data collected near London, England, by R. Huggins,
+
+R. Miller, and D. Steeples, 1989.)
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+Shallow Reflection Pitfalls
+
+1217
+
+ 
+
+ 
+
+ 
+
+time (s)
+
+ 
+
+ 
+
+Fic. 4. Air blast appearing on stacked sections from Heber City, Utah, 12-fold CDP data. The coherent event at times between 60
+and 70 ms is air blast (from Steeples and Miller, 1990).
+
+Common Depth Points
+
+ 
+
+Time (sec)
+
+ 
+
+220 240 280
+T T T
+
+rw
+Pb
+
+d)>} ;
+ELV DDD Ma Pond pp. Dppb.
+: > my P ap ms») Mhyooak
+
+re RE ap ) Rasterites dg
+,
+
+HP , ; ae
+a 1 Por, aD so} Poona PD i
+
+ 
+
+> Wael po
+oye
+
+Sm
+
+ 
+
+my
+rel bT moset
+ki He 3
+
+1 1 yet et L
+60 100 140 180
+
+Distance (ft)
+
+220
+
+Fic. 5. An intra-alluvial reflection from the Blue River Valley, Kansas, showing the effect of improper first-arrival mute on a 12-fold
+CDP stack with air-blast echo from a recording truck at CDPs of 246 and 298. ‘The air-blast echo could be mistaken for a diffraction.
+In reality, the truck was moved from one location to another as the survey progressed. Problems resulting from air blast that stacks
+constructively occur in many cases (from Steeples and Miller, 1990).
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1218 Steeples and Miller
+
+ 
+
+ 
+
+ 
+
+ 
+
+time (sec)
+
+‘i
+
+ye
+
+ 
+
+Devan spe
+THARP RAPES ALR ARR a
+
+Low-Cut Filter (pre A/D): 220 Hz
+
+Fic. 6. An example of the effect of allowing first arrivals to remain in seismic reflection data. Energy arriving at times of less than
+40 ms is primarily refraction energy. Note the lower apparent frequency and the apparent dip. The true reflections at times between
+50 and 100 ms show higher frequency and a flat structure. The scale distance of 40 ft corresponds to about 12 m (from Steeples and
+Miller, 1990).
+
+ 
+
+Velocity Panels (m/s)
+1800 2100 2800 2700 3000
+| | | |
+17 Ty TO TOL
+
+uae
+
+ 
+
+re oh
+
+) on i ce
+
+SN pie Sy
+
+   
+
+2s ERKE Peer
+
+ 
+
+  
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ye Be) ‘ . y Oy oa ,
+: ae me x ¥
+, ys 6 oe rd % 9) pol
+— ps > , r ee bs Ese Pet >
+2 ao eee a ; Wess Sain
+w 200 7 poe a
+a ent
+”
+a =
+c ‘
+400 - SA PNP
+0 2am
+Di]
+
+Fic. 7. Stacked velocity panels in which the first-arrival wavelets were left in the data on purpose to illustrate stacking of refractions.
+Velocity analysis reveals coherency at different depths for different stacking velocities. Hence, the interpretation could depend upon
+which velocity the processor used.
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+Shallow Reflection Pitfalls 1219
+
+So far, our discussion of refractions has involved fiat-lying
+layers only. Figure 8 is an example of improperly muted refrac-
+tions in a data set that mcludes dipping layers near the surface.
+As the survey progressed downdip, the depth to the refractors
+and the associated critical-offset refraction distance increased.
+At some point, the geophones were no longer farther than the
+critical-offset distance and the refractions disappeared. Mean-
+while, signal from a shallower refractor was picked up by the
+geophones, and the refraction data stacked coherently for some
+distance along the line as the process repeated itself. The ef-
+fect was a shingled appearance of the seismic record, with
+the stacked refractors resembling successive layers of roofing
+shingles.
+
+Although misidentifying a refraction as a reflection is a com-
+mon pitfall, the opposite mistake can be made as well, i.e., a
+genume refiection may be discarded simply because it looks
+like a refraction. One way to avoid such an error is to make
+time-distance measurements using a field-file record and to
+solve the problem as though the arrival in question were a
+refraction. This can be accomplished by measuring the veloc-
+ities and intercept times of the direct-wave first arrivals and
+the refraction/refiection in question. These measurements can
+then be introduced into the basic refraction equations for one
+layer over a half-space and solved for critical offset distance.
+If an essential contradiction develops, i.e., if the critical off-
+set distance is much greater than the offset distance at which
+the phase is observed, a reflection is likely because a refrac-
+tion cannot occur at distances smaller than the critical distance.
+When two or more layers are present over a half-space, mul-
+tilayer refraction calculations can be used to observe whether
+an essential contradiction develops in the refraction assump-
+tion. An additional aid to resolving the refiection/refraction
+quandary emerges when the apparent structure of a stacked
+section closely resembles the topography of the surface. Al-
+though such mimicking is geologically possible, it may suggest
+the presence of refractions, erroneous static corrections, or an
+incorrect near-surface velocity model.
+
+For quality control, the data may be processed with the direct
+waves and the refractions left intact within the data set so the
+processor can see where they emerge and what effect they may
+have on the processed sections. The results then can be used
+
+0-
+
+time (sec)
+_
+I
+
+2-
+
+ 
+
+as a diagnostic tool to make certain that refractions, or their
+vestiges, are not present on the final processed section to which
+surgical muting has been applied. The refracted arrivals can be
+muted carefully, field file by field file, during the early stages
+of processing to reduce the likelihood of their stacking on the
+section. Sometimes only a small percentage of field records will
+show unusually good reflections, but these records can be used
+to correlate to the processed seismic sections.
+
+Perhaps unfortunately, the geologic conclusions reached by
+assuming that an event on a stacked section is a reflection may
+approximate the true geology even when the event is a re-
+fraction. Greater depth to a velocity discontinuity leads to in-
+creased refractor intercept times and increased two-way reflec-
+tion times; hence, the stacking of refraction arrivals with CMP
+refiection software can sometimes lead to a correct geologic in-
+terpretation based on either an incorrect or an inappropriate
+geophysical analysis. Indeed, one of the principal limitations of
+the shallow seismic refiection method continues to be its inabil-
+ity to separate, with certainty, shallow reflections from shallow
+refractions and guided waves.
+
+Processing artifacts.—Artifacts that arise from inadequate
+velocity analysis, inaccurate static corrections, or inappropri-
+ate processing are at least as troublesome when they appear
+on shallow reflection sections as they are when they occur in
+deeper petroleum exploration reflection surveys. The deconvo-
+lution of shallow reflection data often, but not always, degrades
+the quality of the reflections. Usually, one or more of the the-
+oretical assumptions underlying deconvolution (Yilmaz, 1987)
+is violated when dealing with shallow data. First, the high-
+frequency components of the source wavelet often change sub-
+stantially as near-surface conditions change. Consequently, the
+source wavelet may change with horizontal location, which
+violates one of the main assumptions of spiking deconvolu-
+tion. Second, the frequency of shallow refiections often varies
+rapidly with depth in the earth, a problem that can be ad-
+dressed at least partially by using time-varying deconvolution.
+Third, shallow refiection data commonly show too few refiec-
+tive horizons (sometimes only one or two) to represent a ran-
+dom refiectivity series, which is one of the primary assump-
+tions of statistics-based deconvolution methods. Finally, the
+
+15m
+
+Fic. 8. An example of refractions stacking constructively when first arrivals were muted improperly. Note the shingled appearance
+of the coherent events between 70 and 100 m/s. This represents improperly muted refractions in a dipping environment. As the
+refractors dipped below the surface, their critical distance became greater than the farthest geophone offsets. Consequently, the
+events die out at times greater than 100 m/s on the stacked sections. In dipping environments, such shingling is diagnostic of
+
+refractions on stacked “reflection” sections.
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1220 Steeples and Miller
+
+S/N ratio of shallow reflection data sets is notoriously poor,
+a condition exacerbated by the use of deconvolution (House
+et al., 1996).
+
+Using an f-k filter or other filtermg procedure does not
+remove refractions, ground roll, or air waves; it merely sup-
+presses some of their characteristics. When reflection informa-
+tion is not present in the scismic data, the vestiges of refrac-
+tions, ground roll, and airwaves that invariably remain in the
+data after filtering, as well as artifacts from wraparound and
+bandwidth problems, may process smoothly into events that
+look like reflections, Searching for reflections in some of the
+raw field files or on frequency-filtered field files is therefore
+imperative; otherwise, we cannot know with certainty that the
+data contain legitimate seismic reflections. In every successful
+shallow reflection survey with which we have been involved,
+a convincing reflection gleaned from at least one field file or
+one CMP gather by simple scaling and/or frequency filtering
+has been identified.
+
+The use of f-é filtering and deconvolution together can gen-
+erate processing artifacts. Additionally, the disturbance within
+a data set may be widespread as a result of faulty electron-
+ics or other sources of noise, such as lightning. For example, a
+single electronic noise pulse on one 48-channel record can con-
+taminate 48 bins of a CMP sort. When a data set shows spiky
+noise on several traces or shots, the deconvolution operator
+is inverted at the base of its window and scaled proportion-
+ally to the amplitude of the spike. The f-é filter process can
+spread this contamination to other traces via its trace-mixing
+characteristics. To test whether a data set has this problem, the
+operator’s window length can be varied up and down by a fac-
+tor of two or three. Theoretically, the deconvolution operation
+should be most sensitive to reflection wavelets within the auto-
+correlation window. When the wavelet moves more than a few
+milliseconds, it is almost certainly a processing artifact rather
+than a reflector. To continue with our 48-channel, noise-pulse
+example, a single spike occurring on all traces of a 48-channel
+record can emerge on a CMP-processed section as a coher-
+ent feature 48 traces wide that has the attributes of the filter
+operators used during processing.
+
+Another type of data contamination resulting from filter op-
+erators occurs when clipped data are processed. Clipping can
+occur inside the geophones, in the seismograph itself, or during
+processing. In this type of contamination, an artificial, high-
+
+0-
+
+time (sec)
+_
+I
+
+27
+
+frequency content is introduced into the data at the comers
+of the clipped wavelets. Any subsequent filtering operations
+will duplicate the filter operator at time samples representing
+clipped corners. When the resulting filter-operator wavelets in
+the data happen to stack coherently, they can be (and have
+been) misinterpreted as reflections.
+
+A processor’s choice of automatic gain control (AGC) win-
+dow length can have an enormous effect on the way a seismic
+section looks. Displaying the data with an AGC window of
+20 ms as opposed to 200 ms, for example, may alter the look
+of a seismic section substantially, which can lead to a different
+set of interpretations. As shown in Figure 9, the AGC window
+effect produced a high-amplitude zone on the seismic section
+at times greater than 140 ms on the section. A longer AGC
+window (of perhaps 150 ms) would have reduced the effect of
+amplification of the low-signal zone.
+
+Some processing flows have the potential to produce coher-
+ent events that may be interpreted erroneously as reflections.
+In addition to those noted previously, residual statics and dip
+filters also act as coherency filters. Horizontal stacking, ie., the
+mixing or adding of adjacent traces, favors coherency and sets
+up the other coherency filters to manufacture what appear to
+be reflectors.
+
+When to stop processing —Sometimes the brute-stack stage
+is a good point at which to conclude the data do not contain
+sufficient reflection energy to merit continuing a project. We
+assume that we are dealing with genuine reflections only when
+we see hints of their presence on either the frequency-filtered
+shot records or on the CMP gathers. In contrast, useful geo-
+logic information can be processed into oblivion. For example,
+Figure 10 indicates the presence of a small bedrock valley by
+the reversal of apparent dip on the bedrock-reflection hyper-
+bola at times between 55 and 65 ms. Standard CMP processing
+[without dip moveout (DMO) processing, however] obliter-
+ated this bedrock valley from the data. In this instance, the
+best interpretation would have been achieved by using unpro-
+cessed field files.
+
+Data interpretation pitfalls
+
+When the user is confident that both collection and process-
+ing pitfalls have been avoided, the geologic interpretation may
+
+ 
+
+Fic. 9. In this section, choosing an inappropriate automatic gain control window resulted in a relatively quict zone at times between
+90 and 140 ms. The increase in amplitude at 140 ms is not real; it is a vestige of the AGC window, which causes the ground roll
+
+below 140 ms to be plotted at a larger amplitude.
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+Shallow Reflection Pitfalls 1221
+
+begin. Among the main interpretation hazards is the presence
+of multiple coherent peaks on a seismic section, which may
+or may not indicate two or more individual reflections. An
+individual reflector may be represented by one or more peaks,
+depending upon the shape and bandwidth of the source wave-
+let and on the acoustic impedance contrast at the individual
+interfaces.
+
+The wavelets shown in comparisons (Miller et al., 1986, 1992)
+of typical near-surface sources result in two dominant peaks for
+individual reflections from an interface in which a larger acous-
+tic impedance is encountered, depending somewhat upon dis-
+play parameters. Conversely, shallow seismic sources typically
+produce only one dominant peak per reflector when the sig-
+nal is reflected from an interface characterized by a material
+having a smaller acoustic impedance,
+
+Deconvolution is not used regularly and is successful only
+rarely on shallow seismic reflection sections, thus, the effects
+of source wavelets can remain in the data and pose problems
+for interpreters. Figure 11 is a schematic of a hypothetical sit-
+uation (although perhaps oversimplified) in which three re-
+flectors have produced five peaks. Clearly, something must be
+known about the shape and bandwidth of the source wavelet
+and about the processing history for the data to be interpreted
+optimally.
+
+To some extent, interpretation pitfalls can be avoided by
+judiciously using synthetic seismograms or, at a minimum, by
+using data from borehole check shots. Synthetic seismograms
+often can be generated and used to tie reflections to individual
+geologic units, provided that some well control information
+and geophysical logs are available. This can be of immense
+help during a geologic interpretation, which in most cases must
+
+ideal actual
+0 0
+
+SUrfaca
+
+<— time
+
+ 
+
+Fic. 11. A hypothetical geologic, acoustic-impedance, and syn-
+thctic-scismogram model showing reversed polarity at the sec-
+ond reflective interface. In such a case, shallow reflection data
+commonly produce five peaks for only three interfaces.
+
+CDP LOCATIONS
+12 meters
+
+=-92Z0!—--92Z01
+
+time (sec)
+
+Wh)!
+i
+
+|!
+
+ 
+
+{
+j
+|
+
+ 
+
+AI
+Wath Nyy
+ny Wh hy)
+
+i {
+
+\HH
+NUIT,
+
+-960! —-—9601
+
+y
+ip
+iy \
+pil AN ae) AND
+WN HL EY! My
+Whi) Wit i} wh} i)
+oli! Ht Mh ‘yt |
+
+Fic. 10. Bedrock vallcy interpreted from ficld files. Note the asymmetry of the reflector at times between 55 and 65 ms. At locations
+1074 and 1076, the apex of the reflection hyperbola is to the left of the shotpoint, which indicates the updip direction is to the left.
+At locations 1096 and 1098, the apex of the reflection hyperbola is to the right of the shotpoint, indicating the updip direction is to
+the right. Consequently, we know that a bedrock valley is present within the 12-m horizontal distance between locations 1076 and
+
+1096. This bedrock valley disappeared during processing.
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1222 Steeples and Miller
+
+be tested by other methods, including corroborative drilling at
+critical spots.
+
+Data processing pitfalls and interpretation problems are not
+unrelated. For example, an interpretation can depend heavily
+on the velocity function used. Figures 12 and 13 (Steeples and
+Miller, 1990) show how a refined velocity function can affect
+interpretation when a small horst has been superimposed on
+a gently sloping interface. Figure 14 (Miller, 1992) illustrates
+the sensitivity of data quality to small changes in NMO stretch
+mute. Note that S/N ratio can be an important variable in the
+interpretation of a seismic section.
+
+Incorrect or uncompensated static corrections— Early or de-
+layed arrivals of seismic energy, called statics, result from a lat-
+erally nonuniform, near-surface velocity or elevation. They are
+
+a problem for both conventional and shallow reflection surveys.
+The severity of the problem, however, is much more significant
+during shallow surveys when the total static correction is a sig-
+nificant fraction of the two-way reflection time. Because the
+data contain high frequencies, the static corrections may be
+more than the dominant periods of the reflection wavelets.
+
+Managing the statics problem with processing routines can
+be attempted with some degree of confidence when a large
+number of reflections are present. Unfortunately, the number
+of total reflection events on shallow data sets tends to be low,
+which sets the stage for the production of artifacts during ef-
+forts to compensate for these time irregularities. In fact, corre-
+lation statics routines have been quite successful in removing
+real structures, generating bogus structures, and producing co-
+herent events from noise.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+  
+
+Time (s)
+
+er pee
+
+ 
+
+Ae De oe ee a : e MP me o - 4 rh
+
+! a
+
+a
+sh
+
+mt
+
+Di
+4 : 1 ae
+
+ 
+
+.
+
+   
+
+2 ets seas
+bit ma
+
+ 
+
+2 ie
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+? va
+
+TET
+aes a —
+
+Herein 12 me -
+HT eouscutinlt -
+
+ 
+   
+
+1 ‘ i"
+
+Fic. 12, The effect of incorrect stacking velocity on a shallow reflector. The apparent fault to the right of the center of the seismic
+section is not a fault but is the effect of incorrect stacking velocity, Compare with Figure 13, in which a more appropriate velocity
+
+function was used (from Steeples and Miller, 1990).
+
+nmo
+
+Time (s)
+
+ 
+
+= 440 m/s
+
+nmo
+V = 490 m/s
+
+Vine = 410 m/s
+
+12m
+malt
+
+Fic. 13. The same data as those in Figure 12 but with a better ato function. No faulting is evident (from Steeples and
+Miller, 199
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+Shallow Reflection Pitfalls 1223
+
+Probably the most effective method of correcting shallow re-
+flection data for near-surface static irregularities was developed
+in association with the optimum-window method of Hunter
+et al. (1984). Most static variations originate above the water
+table; thus, when a water table reflection can be identified, most
+statics can be compensated by flattening the reflection. Unfor-
+tunately, in shallow reflection data, we have seen that strong
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+source -to-receiver offset (m) CDP numbers
+3.7 18.2 250 270 290
+[me
+a) (a) J TT
+25%
+40 4 , 4
+gq 07 =
+£
+@®
+£ 8- 4
+100 4 ~
+0 7] Pe gel
+2 ne
+g ‘Ty
+@®
+£ =
+. | (c) JJ
+i l
+40 + 4
+gq 0- 7
+E
+oO
+E w- “
+100 - -
+120 4 =
+0 7m 0 3m
+Li Li
+distance distance
+
+Fic. 14. The first-arrival stretch mute is not a particularly im-
+portant parameter in deep-reflection surveying. In near-surface
+surveys, however, it can be significant (data from Miller, 1992).
+
+water table reflections are not common. This leaves refraction
+statics, common-offset statics, or correlation statics routines as
+options.
+
+Correlation statics routines are widely used, but they are also
+very susceptible to the generation of artifacts. The main source
+of error comes from excessive allowable shifts. As the domi-
+nant frequency of the reflection wavelet increases, the amount
+of shift that can be applied without skipping a cycle decreases.
+For example, consider a reflection-time event at 40 ms having
+2 ms of static relative to adjacent traces. This static represents
+1/5 A of a 100-Hz reflection; but if the dominant frequency is
+500 Hz, it will be a full-wavelength static. Depending on the
+bandwidth of the reflection wavelet, it is very unlikely that this
+static can be managed with correlation statics routines alone.
+Limiting the maximum allowable static shift in correlation stat-
+ics routines to one-quarter of the dominant wavelet period
+and ensuring that at least two (and preferably more) reflection
+events are within the correlation window minimizes the chance
+of gencrating static artifacts. Clearly, maximizing frequency is
+our ultimate goal; but regardless of how static correction is ac-
+complished, compensating for actual static anomalies becomes
+more difficult as frequency increases.
+
+Low fold on some geophones.—Sometimes recording ge-
+ometry, optimum recording window, and depth to reflector can
+combine in such a way that the multiplicity or CMP fold on the
+processed data can vary greatly with time within a particular
+seismic section. When the midpointis the same for 12 offset dis-
+tances, for example, a stack is referred to as 12-fold. But when
+a shallow reflector exists under low-fold circumstances and full
+fold is 12, calling the data for the whole section “12-fold” could
+be misleading.
+
+In some cases, the fold level may drop so much that the data
+we see on the shallowest parts of a section may be equivalent
+to those we see on a common-offset section. When the S/N
+ratio is sufficiently high, plotting common-offset sections with
+and without NMO corrections for one or more of the near-trace
+offsets can be advantageous following the application of statics
+and filtering. Determining whether any of the common-offset
+sections resembles the final stacked section can be helpful when
+interpreting CMP sections. Pullan and Hunter (1985) show that
+substantial distortion of the reflected wavelet can occur at wide
+incidence angles with shallow reflections, The common-offset
+sections from one or more of the closer offsets may provide
+important information about reflected wavelets that have not
+been distorted by NMO corrections or by wide angles of inci-
+dence. Care should be taken that close-offset, single traces are
+not corrupted by overfiltering, which can produce what appear
+to be high-frequency reflection wavelets.
+
+CONCLUSIONS
+
+Shallow seismic reflection has reached animportant juncture
+as a potentially practicable and reliable method of profiling the
+near surface of the earth. The real cost per channel of the mod-
+ern seismograph has decreased strikingly in recent years, as has
+the cost of related data processing hardware and software. An
+increase in the accessibility of these items has produced a con-
+comitant increase in interest in the shallow seismic reflection
+profiling method, with many new environmental and geophys-
+ical applications being developed as a result. However, all too
+Downloaded 09/21/13 to 128.113.26.88. Redistribution subject to SEG license or copyright; see Terms of Use at http://library.seg.org/
+
+1224 Steeples and Miller
+
+often projects succumb to one or more of the pitfalls discussed
+here, thus damaging the overall reputation of the technique.
+
+As aresult, practitioners of the method must be knowledge-
+able in both theory and practice when applying shallow seismic
+techniques and must be exceptionally careful not to misinter-
+pret as reflections the many coherent waves that are not reflec-
+tions. This is particularly true of the types of wave coherencies
+that develop during or that can be enhanced by digital process-
+ing, Some of the pitfalls an interpreter may face when dealing
+with near-surface data include the spatial aliasing of ground
+roll, interpreting processed airwaves as reflected seismic waves,
+misinterpreting refractions as reflections on stacked CMP sec-
+tions, and failing to recognize processing artifacts. Therefore,
+particular care must be taken during all phases of a project,
+which inciudes planning and modeling as well as data collec-
+tion, processing, and interpretation. Finally, to validate their
+conclusions, interpreters must have access to at least one field
+file, along with display copies of one or more of the intermedi-
+ate processing steps whenever possible.
+
+ACKNOWLEDGMENTS
+
+Reviews by Susan Pullan, Brad Carr, and Joel Watkins
+greatly helped the focus and readability of this paper. Edi-
+torial assistance by Lee Blackledge during several drafts and
+preparation of figures by Pat Acker are greatly appreciated.
+
+REFERENCES
+
+Evison, F. F., 1952, The inadequacy of the standard seismic techniques
+for shallow surveying: Geophysics, 17, 867-875.
+
+Hoover, G. M., and O’Brien, J. T., 1980, The influence of the planted
+geophone on seismic land data: Geophysics, 45, 1239-1253.
+
+House, J. R., Boyd, T. M., and Haeni, F. P,, 1996, Haddam Meadows,
+CT: A case study for the acquisilion, processing, and relevance of
+3-D seismic data as applied to the remediation of DNAPL contam-
+ination, in Weimer, P, and Davis, T. L., Eds., Applications of 3-D
+seismic data to exploration and production: AAPG Studies in Ge-
+ology 42, Am. Assn. Petr. Geol., 257-265.
+
+Hunter, J. A., Pullan, S. E., Burns, R. A., Gagne, R. M., and Good,
+R. S,, 1984, Shallow seismic reflection mapping of the overburden-
+bedrock interface with the engineering seismograph—some simple
+techniques: Geophysics, 49, 1381-1385.
+
+Keiswetter, D. A., 1995, Seismic reflection analysis of the Manson im-
+pact structure, Towa: Ph. D. dissertation, Univ. of Kansas.
+
+Krohn, C. E., 1984, Geophone ground coupling: Geophysics, 49, 722-
+731.
+
+Miller, R. D., 1992, Normal moveout stretch mute on shallow-reflection
+data: Geophysics, $7, 1502-1507.
+
+Miller, R. D., Pullan, S. E., Steeples, D, W., and Hunter, J. A., 1992,
+Field comparison of shallow seismic sources near Chino, California:
+Geophysics, 57, 693-709.
+
+Miller, R. D., Pullan, S. E., Waldner, J. S., and Haeni, F. P,, 1986, Field
+comparison of shallow seismic sources: Geophysics, 5L 3067-2092.
+
+Pullan, S. E., and Hunter, J. A., 1985, Seismic model studies of the
+overburden, bedrock problem: Geophysics, 50, 1684-1688.
+
+Steeples, D. W., and Miller, R. D., 1990, Seismic-reflection methods
+applied to engineering, environmental, and ground-water problems,
+in Ward, S., Ed., Review and tutorial: Investigations in geophysics 5,
+Soc. Expl, Geophys., 1-30.
+
+Yilmaz, O., 1987, Reismic data processing: Investigations in geophysics
+2, Soc. Expl. Geophys.
+
