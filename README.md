@@ -31,5 +31,13 @@ pip install -U pip setuptools wheel
 pip install -U spacy
 python -m spacy download en_core_web_sm
 ```
-## 📦 Loading and using models
+## 📦 Loading & Using Models
+To load a model, use [`spacy.load()`](https://spacy.io/api/top-level#spacy.load)
+with the model name or a path to the model data directory.
+
+```python
+import spacy
+nlp = spacy.load("en_core_web_sm")
+
+```
 
