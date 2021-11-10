@@ -24,7 +24,12 @@ For detailed installation instructions and other operating system, can be refer
 Installation for macOS (my operating system):
 
 ```
+# Download best-matching version of specific model for your spaCy installation
+python -m spacy download en_core_web_sm
+
 pip install -U pip setuptools wheel
 pip install -U spacy
 python -m spacy download en_core_web_sm
 ```
+## 📦 Loading and using models
+
