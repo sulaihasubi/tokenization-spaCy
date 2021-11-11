@@ -38,9 +38,12 @@ with the model name or a path to the model data directory.
 ```python
 import glob
 import spacy
-
 nlp = spacy.load(name='en_core_web_sm')
+```
 
+Define your local path where you put the text files.
+```python
+path = '/Users/risehill/Documents/09-NLPProcessing/TextExtracted/steeples1998.txt'
 ```
 ## 👾 Let's get through the Codes!
 
