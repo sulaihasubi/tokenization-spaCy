@@ -59,3 +59,26 @@ In this line of code, the text in paragraph converted into one string everytime 
 # Check number of text contents in original Text files
  print(len(Newtext))
 ```
+
+Check the tokenisation details:
+```python
+text_cleans.append(CleanText)
+        print('-----------------------------------------------------------------------------------------------------------')
+        print('CHECK TOKENISATION DETAILS')
+        print('-----------------------------------------------------------------------------------------------------------')
+        # Checking the details of the tokens
+        for line in lines:
+            line = nlp(line)
+            for token in TextCleaned:
+                my_doc_cleaned = [token for token in line if not token.is_stop and not token.is_punct and not token.is_space]
+                analyzeToken ='{:<5}{:<15}{:<15}{:<15}{:<15}{:<15}'.format(token.i, token.idx, token.text_with_ws, token.is_space, token.is_punct, token.is_stop,)
+                analyzeToken2 = '{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}'.format(token.i, token.text, token.is_alpha, token.shape_,  token.is_ascii, token.is_digit)
+                analyzeToken3 = '{:<5}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}'.format(token.i, token.text, token.like_num,
+                                                                                   token.like_url, token.like_email,
+                                                                                   token.is_ascii, token.is_digit)
+                analyzeToken4 = '{:<5}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}'.format(token.i, token.text, token.is_left_punct,
+                                                                                   token.is_right_punct, token.is_bracket,
+                                                                                   token.is_quote, token.is_currency)
+                analyzeToken5 = '{:<15}{:<15}{:<15}'.format(token.i, token.text, token.text.istitle())
+                print(analyzeToken)
+```
