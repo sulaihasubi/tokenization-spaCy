@@ -111,6 +111,7 @@ Removed words that contain Nouns, Verb, Adj, Adverbs, or Proper Names:
 ```
 Removed Stopwords and punctuation from the text:
  ```python
+# Removed Stopwords and punctuation from the text : 5247
 TextCleaned = [token for token in textAnalysis if not token.is_stop and not token.is_punct
                        and not token.is_space and not token.is_digit
                        and not token.like_num and not token.like_url and not token.like_email and token.is_alpha]
