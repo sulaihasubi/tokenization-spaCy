@@ -82,3 +82,22 @@ text_cleans.append(CleanText)
                 analyzeToken5 = '{:<15}{:<15}{:<15}'.format(token.i, token.text, token.text.istitle())
                 print(analyzeToken)
 ```
+
+The program output will be like this:
+
+    8403 44431          fold           0              0              0              
+    8407 44446          misleading     0              0              0              
+    8412 44467          cases          0              0              0              
+    8415 44478          fold           0              0              0              
+    8416 44483          level          0              0              0              
+    8418 44493          drop           0              0              0              
+    8423 44515          data           0              0              0              
+    8428 44534          shallowest     0              0              0              
+    8429 44545          parts          0              0              0              
+    8432 44556          section        0              0              0              
+    8435 44571          equivalent     0              0              0              
+    8442 44603          common         0              0              0              
+    8444 44610          offset         0              0              0              
+    8445 44617          section        0              0              0              
+    8449 44635          S              0              0              0  
+   
