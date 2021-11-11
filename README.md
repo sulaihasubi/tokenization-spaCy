@@ -101,11 +101,20 @@ The program output will be like this:
     8445 44617          section        0              0              0              
     8449 44635          S              0              0              0  
  
- Removed words that contain Nouns, Verb, Adj, Adverbs, or Proper Names:
+Removed words that contain Nouns, Verb, Adj, Adverbs, or Proper Names:
  ```python
 # Remove all the words that are  not nouns, verbs, adj, adverbs, or proper names
         excluded_tags = {"NOUN", "VERB", "ADJ", "ADV", "ADP", "PROPN"}
         TextCleaned1 = [token for token in textAnalysis if excluded_tags]
         print(len(TextCleaned1))
         print(TextCleaned1)
+```
+Removed Stopwords and punctuation from the text:
+ ```python
+TextCleaned = [token for token in textAnalysis if not token.is_stop and not token.is_punct
+                       and not token.is_space and not token.is_digit
+                       and not token.like_num and not token.like_url and not token.like_email and token.is_alpha]
+        DetectTitle = [token for token in textAnalysis if not token.text.istitle()]
+        print(len(DetectTitle))
+        print(DetectTitle)
 ```
