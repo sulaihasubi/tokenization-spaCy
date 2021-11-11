@@ -47,5 +47,15 @@ Define your local path where you put the text files.
 path = '/Users/risehill/Documents/09-NLPProcessing/TextExtracted/steeples1998.txt'
 ```
 ## 👾 Let's get through the Codes!
-
-
+```python
+for file in glob.glob(path):
+    with open(file, encoding='utf-8', errors='ignore') as file_in:
+        text = file_in.read()
+```
+In this line of code, the text in paragraph converted into one string everytime it is found any new line
+```python
+# Replace the newline as one string
+ Newtext = text.replace('\n', ' ')
+# Check number of text contents in original Text files
+ print(len(Newtext))
+```
