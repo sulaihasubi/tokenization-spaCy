@@ -115,7 +115,7 @@ Removed Stopwords and punctuation from the text:
 TextCleaned = [token for token in textAnalysis if not token.is_stop and not token.is_punct
                        and not token.is_space and not token.is_digit
                        and not token.like_num and not token.like_url and not token.like_email and token.is_alpha]
-        DetectTitle = [token for token in textAnalysis if not token.text.istitle()]
-        print(len(DetectTitle))
-        print(DetectTitle)
+DetectTitle = [token for token in textAnalysis if not token.text.istitle()]
+print(len(DetectTitle))
+print(DetectTitle)
 ```
