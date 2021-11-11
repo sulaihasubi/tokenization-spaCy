@@ -36,8 +36,12 @@ To load a model, use [`spacy.load()`](https://spacy.io/api/top-level#spacy.load)
 with the model name or a path to the model data directory.
 
 ```python
+import glob
 import spacy
-nlp = spacy.load("en_core_web_sm")
+
+nlp = spacy.load(name='en_core_web_sm')
 
 ```
+## 👾 Let's get through the Codes!
+
 
