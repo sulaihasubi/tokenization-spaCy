@@ -100,4 +100,12 @@ The program output will be like this:
     8444 44610          offset         0              0              0              
     8445 44617          section        0              0              0              
     8449 44635          S              0              0              0  
-   
+ 
+ Removed words that contain Nouns, Verb, Adj, Adverbs, or Proper Names:
+ ```python
+# Remove all the words that are  not nouns, verbs, adj, adverbs, or proper names
+        excluded_tags = {"NOUN", "VERB", "ADJ", "ADV", "ADP", "PROPN"}
+        TextCleaned1 = [token for token in textAnalysis if excluded_tags]
+        print(len(TextCleaned1))
+        print(TextCleaned1)
+```
