@@ -1,6 +1,10 @@
 Tokenization with spaCy
 ========================
 [![Built with spaCy](https://img.shields.io/badge/made%20with%20❤%20and-spaCy-09a3d5.svg)](https://spacy.io)
+<a href="https://github.com/sulaihasubi/tokenization-spaCy/commits/master">
+        <img alt="Last commit" src="https://img.shields.io/github/last-commit/sulaihasubi/tokenization-spaCy">
+</a>
+
 
 [spaCy](https://github.com/explosion/spaCy) is a library for advanced Natural Language Processing in Python and Cython. It's built on the very latest research, and was designed from day one to be used in real products. (Source: [spaCy](https://github.com/explosion/spaCy))
 
